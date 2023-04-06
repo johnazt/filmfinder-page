@@ -1,35 +1,24 @@
 module.exports = {
-	env: {
-		browser: true,
-		es2021: true,
-	},
-	extends: [
-		'plugin:react/recommended',
-		'xo',
-	],
-	overrides: [
-		{
-			extends: [
-				'xo-typescript',
-			],
-			files: [
-				'*.ts',
-				'*.tsx',
-			],
-		},
-	],
-	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-	},
-	plugins: [
-		'react',
-	],
-	rules: {
-	},
-	settings: {
-		react: {
-			version: 'latest',
-		},
-	},
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ["plugin:react/recommended", "prettier"],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: "module",
+  },
+  plugins: ["react", "@typescript-eslint"],
+  rules: {
+    "no-unused-vars": "warn",
+  },
+  settings: {
+    react: {
+      version: "latest",
+    },
+  },
 };
