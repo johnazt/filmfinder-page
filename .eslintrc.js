@@ -18,7 +18,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "18.2.0",
+      version: "latest",
     },
   },
 };

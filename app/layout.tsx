@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/globals.css";
+import Navbar from "./shared/Navbar";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
