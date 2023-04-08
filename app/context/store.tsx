@@ -27,7 +27,7 @@ export const GlobalContextProvider = ({
   useEffect(() => {
     const getPopularMovies = async () => {
       const response = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=es-ES&page=1`
       );
       const data = await response.json();
       setPopularData(data.results);
@@ -39,7 +39,7 @@ export const GlobalContextProvider = ({
   useEffect(() => {
     const getReleaseMovies = async () => {
       const response = await fetch(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1&region=US`
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=es-ES&page=1&region=CL`
       );
       const data = await response.json();
       setReleaseData(data.results);

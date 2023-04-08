@@ -8,7 +8,6 @@ import { useGlobalContext } from "../context/store";
 
 const PopularMovies = () => {
   const { popularData, baseUrl } = useGlobalContext();
-  // console.log(data);
   return (
     <section className="px-4">
       <h2 className="my-4 text-2xl">Películas más populares</h2>
