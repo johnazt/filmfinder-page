@@ -1,14 +1,11 @@
+"use client";
 import React from "react";
-import { MovieDetails } from "../interfaces/movieDetails";
+// import { useGlobalContext } from "../context/store";
 
-interface InfoMoviesProps {
-  detailMovieData: MovieDetails;
-  baseUrl: string;
-}
-
-const InfoMovies = ({ detailMovieData, baseUrl }: InfoMoviesProps) => {
-  console.log(detailMovieData, baseUrl);
-  return <div>info</div>;
+const InfoMovies = () => {
+  // const { popularData } = useGlobalContext();
+  // console.log(popularData);
+  return <section>{/* <h2>{detailMovieData.title}</h2> */}</section>;
 };
 
 export default InfoMovies;

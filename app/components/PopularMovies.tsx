@@ -4,18 +4,16 @@ import React from "react";
 import { Movie } from "../interfaces/movie";
 import styles from "../../styles/popular.module.css";
 import Link from "next/link";
+import { useGlobalContext } from "../context/store";
 
-interface PopularMoviesProps {
-  allPopularMovies: Movie[];
-  baseUrl: string;
-}
-
-const PopularMovies = ({ allPopularMovies, baseUrl }: PopularMoviesProps) => {
+const PopularMovies = () => {
+  const { popularData, baseUrl } = useGlobalContext();
+  // console.log(data);
   return (
     <section className="px-4">
       <h2 className="my-4 text-2xl">Películas más populares</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {allPopularMovies.map((m: Movie) => (
+        {popularData.map((m: Movie) => (
           <div
             key={m.id}
             className="border rounded-lg overflow-hidden min-h-[400px]"

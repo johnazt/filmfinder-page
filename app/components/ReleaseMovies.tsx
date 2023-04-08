@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
-import { Movie } from "../interfaces/movie";
 import Link from "next/link";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useGlobalContext } from "../context/store";
 
-interface ReleaseMoviesProps {
-  allReleaseMovies: Movie[];
-  baseUrl: string;
-}
-
-const ReleaseMovies = ({ allReleaseMovies, baseUrl }: ReleaseMoviesProps) => {
+const ReleaseMovies = () => {
+  const { releaseData, baseUrl } = useGlobalContext();
   return (
     <div>
       <h2 className="my-2 text-2xl">Películas en Estreno</h2>
@@ -23,7 +19,7 @@ const ReleaseMovies = ({ allReleaseMovies, baseUrl }: ReleaseMoviesProps) => {
         showStatus={false}
         autoPlay
       >
-        {allReleaseMovies.map((m) => (
+        {releaseData.map((m) => (
           <Link key={m.id} href="/" className="block">
             <div className="relative h-96">
               <Image
@@ -32,6 +28,7 @@ const ReleaseMovies = ({ allReleaseMovies, baseUrl }: ReleaseMoviesProps) => {
                 height={0}
                 width={500}
                 className="h-full w-full object-contain"
+                priority={true}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-90"></div>
               <div className="absolute inset-0 flex justify-center items-end">
