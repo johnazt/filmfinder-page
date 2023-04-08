@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Movie } from "../interfaces/movie";
@@ -19,7 +20,7 @@ const PopularMovies = ({ allPopularMovies, baseUrl }: PopularMoviesProps) => {
             key={m.id}
             className="border rounded-lg overflow-hidden min-h-[400px]"
           >
-            <Link href="/">
+            <Link href={`/movie/${m.id}`}>
               <Image
                 src={`${baseUrl}original${m.poster_path}`}
                 alt={m.original_language}

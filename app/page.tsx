@@ -24,7 +24,7 @@ async function getPopularMovies() {
     .then((res) => res.results);
 }
 
-const StaticProp = () => {
+const Home = () => {
   const allReleaseMovies = use(getReleaseMovies());
   const allPopularMovies = use(getPopularMovies());
 
@@ -36,4 +36,4 @@ const StaticProp = () => {
   );
 };
 
-export default StaticProp;
+export default Home;
