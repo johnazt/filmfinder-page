@@ -29,10 +29,10 @@ const StaticProp = () => {
   const allPopularMovies = use(getPopularMovies());
 
   return (
-    <>
+    <main className="container mx-auto px-4">
       <ReleaseMovies allReleaseMovies={allReleaseMovies} baseUrl={baseUrl} />
       <PopularMovies allPopularMovies={allPopularMovies} baseUrl={baseUrl} />
-    </>
+    </main>
   );
 };
 
