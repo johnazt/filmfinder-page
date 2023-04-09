@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/globals.css";
-import Navbar from "./shared/Navbar";
-import { GlobalContextProvider } from "./context/store";
+import Navbar from "../components/shared/Navbar";
+import { GlobalContextProvider } from "../context/store";
 
 export default function RootLayout({
   children,

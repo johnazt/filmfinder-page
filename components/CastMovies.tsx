@@ -1,22 +1,19 @@
 "use client";
-import React, { useState } from "react";
-import { Actor } from "../interfaces/actor";
+import { Actor } from "../interfaces";
 import Image from "next/image";
+import React, { useState } from "react";
 
 interface CastMoviesProps {
   castMovieData: Actor[];
-  baseUrl: string;
 }
 
-const CastMovies = ({ castMovieData, baseUrl }: CastMoviesProps) => {
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+
+const CastMovies = ({ castMovieData }: CastMoviesProps) => {
   const [showAllActors, setShowAllActors] = useState(false);
   const actorsToDisplay = showAllActors
     ? castMovieData
     : castMovieData.slice(0, 12);
-
-  const onError = (e: any) => {
-    e.target.src = "/assets/default-image.jpg";
-  };
 
   return (
     <section className="my-6">

@@ -1,5 +1,5 @@
 import React from "react";
-import { ReleaseMovies, PopularMovies } from "./components";
+import { ReleaseMovies, PopularMovies } from "../components";
 
 const Home = () => {
   return (

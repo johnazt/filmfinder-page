@@ -1,13 +1,15 @@
 "use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import { useGlobalContext } from "../context/store";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const ReleaseMovies = () => {
-  const { releaseData, baseUrl } = useGlobalContext();
+  const { releaseData } = useGlobalContext();
   return (
     <div>
       <h2 className="my-2 text-2xl">Películas en Estreno</h2>
@@ -20,7 +22,7 @@ const ReleaseMovies = () => {
         autoPlay
       >
         {releaseData.map((m) => (
-          <Link key={m.id} href="/" className="block">
+          <Link key={m.id} href={`/movie/${m.id}`} className="block">
             <div className="relative h-96">
               <Image
                 src={`${baseUrl}original${m.backdrop_path}`}

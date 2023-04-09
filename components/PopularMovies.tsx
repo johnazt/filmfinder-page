@@ -1,13 +1,15 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import { Movie } from "../interfaces/movie";
-import styles from "../../styles/popular.module.css";
-import Link from "next/link";
+import { Movie } from "../interfaces";
 import { useGlobalContext } from "../context/store";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import styles from "../styles/popular.module.css";
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const PopularMovies = () => {
-  const { popularData, baseUrl } = useGlobalContext();
+  const { popularData } = useGlobalContext();
   return (
     <section className="px-4">
       <h2 className="my-4 text-2xl">Películas más populares</h2>

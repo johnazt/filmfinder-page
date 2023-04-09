@@ -1,19 +1,20 @@
 "use client";
-import React from "react";
 import { MovieDetails } from "../interfaces";
 import Image from "next/image";
+import React from "react";
 
 interface InfoMovieProps {
   detailMovieData: MovieDetails;
-  baseUrl: string;
 }
 
-const InfoMovies = ({ detailMovieData, baseUrl }: InfoMovieProps) => {
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+
+const InfoMovies = ({ detailMovieData }: InfoMovieProps) => {
   return (
     <section>
       <h2 className="py-6 text-4xl">{detailMovieData.title}</h2>
       <Image
-        src={`${baseUrl}original${detailMovieData.backdrop_path}`}
+        src={`${baseUrl}original${detailMovieData?.backdrop_path}`}
         alt={detailMovieData.original_language}
         height={200}
         width={200}
