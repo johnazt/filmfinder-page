@@ -2,13 +2,19 @@
 
 Esta aplicación muestra una lista de películas obtenidas de la API The Movie DB. Las películas se dividen en las más populares y las de estreno. Al hacer clic en una de ellas, se muestran los detalles de la película, como el reparto y la sinopsis. La aplicación está construida con Next.js 13, Tailwind y Typescript.
 
+### 🎬 Puedes ver la aplicación desplegada [aquí](https://filmfinder-page.vercel.app/)
+
+---
+
 ## 🚨Prerrequisitos
 
 Antes de comenzar, asegúrese de tener instalado lo siguiente en su computadora:
 
 - Node.js (versión 12 o posterior): https://nodejs.org
 
-## ✅Comenzando
+---
+
+## 🏁 Instalación Local
 
 Para empezar con la aplicación, sigue estos pasos:
 
