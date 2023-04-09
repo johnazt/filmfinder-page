@@ -26,6 +26,7 @@ const PopularMovies = () => {
                 height={200}
                 width={200}
                 className={`${styles.img}`}
+                priority
               />
               <div className="p-4">
                 <h3 className="font-bold text-lg text-center">{m.title}</h3>

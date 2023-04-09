@@ -14,21 +14,21 @@ const InfoMovies = ({ detailMovieData }: InfoMovieProps) => {
     <section>
       <h2 className="py-6 text-4xl">{detailMovieData.title}</h2>
       <Image
-        src={`${baseUrl}original${detailMovieData?.backdrop_path}`}
+        src={`${baseUrl}original${detailMovieData.backdrop_path}`}
         alt={detailMovieData.original_language}
         height={200}
         width={200}
         className="w-full object-cover max-h-[350px]"
-        loading="lazy"
+        priority
       />
       <div className="flex py-8 flex-col text-center lg:text-right gap-4 items-center md:flex-row lg:max-w-5xl m-auto">
         <Image
-          src={`${baseUrl}original${detailMovieData?.poster_path}`}
+          src={`${baseUrl}original${detailMovieData.poster_path}`}
           alt={detailMovieData.original_language}
           height={180}
           width={180}
           className="h-auto w-auto"
-          loading="lazy"
+          priority
         />
         <p className="lg:text-xl">
           {detailMovieData.overview

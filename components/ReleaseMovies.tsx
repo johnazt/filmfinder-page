@@ -30,7 +30,7 @@ const ReleaseMovies = () => {
                 height={0}
                 width={500}
                 className="h-full w-full object-contain"
-                priority={true}
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-90"></div>
               <div className="absolute inset-0 flex justify-center items-end">

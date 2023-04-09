@@ -1,4 +1,4 @@
-# FilmFinder App
+# FilmFinder App with Next.js 13
 
 Esta aplicación muestra una lista de películas obtenidas de la API The Movie DB. Las películas se dividen en las más populares y las de estreno. Al hacer clic en una de ellas, se muestran los detalles de la película, como el reparto y la sinopsis. La aplicación está construida con Next.js 13, Tailwind y Typescript.
 
