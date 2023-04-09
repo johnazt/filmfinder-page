@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   const routes = [
-    { name: "Movies List App", path: "/" },
+    { name: "FilmFinder", path: "/" },
     { name: "🎬", path: "" },
   ];
   return (
