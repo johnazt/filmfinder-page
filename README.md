@@ -1,8 +1,8 @@
-# FilmFinder App with Next.js 13
+# Last Movies App with Next.js 13
 
 Esta aplicación muestra una lista de películas obtenidas de la API The Movie DB. Las películas se dividen en las más populares y las de estreno. Al hacer clic en una de ellas, se muestran los detalles de la película, como el reparto y la sinopsis. La aplicación está construida con Next.js 13, Tailwind y Typescript.
 
-### 🎬 Puedes ver la aplicación desplegada [aquí](https://filmfinder-page.vercel.app/)
+### 🎬 Puedes ver la aplicación desplegada [aquí](https://lastmovies.vercel.app/)
 
 ---
 
@@ -21,7 +21,7 @@ Para empezar con la aplicación, sigue estos pasos:
 1. Clona el repositorio en tu máquina local utilizando el siguiente comando:
 
 ```bash
-git clone git@github.com:johnazt/filmfinder-page.git
+git clone git@github.com:johnazt/last-movies.git
 ```
 
 2. En el directorio del proyecto instala las dependencias utilizando el siguiente comando:

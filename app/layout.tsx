@@ -4,7 +4,7 @@ import Navbar from "../components/shared/Navbar";
 import { GlobalContextProvider } from "../context/store";
 
 export const metadata = {
-  title: "FilmFinder",
+  title: "Last Movies",
   icons: {
     icon: "/next.svg",
   },
