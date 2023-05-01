@@ -11,7 +11,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 const PopularMovies = () => {
   const { popularData } = useGlobalContext();
   return (
-    <section className="px-4">
+    <section className="p-4 mb-20">
       <h2 className="my-4 text-2xl">Películas más populares</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {popularData.map((m: Movie) => (
