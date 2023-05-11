@@ -20,10 +20,10 @@ export const GlobalContextProvider = ({
 }) => {
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
-  const popularUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=es-ES&page=1`;
+  const popularUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=es-ES&page=1&region=US`;
   const popularData = useMovies(popularUrl);
 
-  const releaseUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=es-ES&page=1&region=CL`;
+  const releaseUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=es-ES&page=1&region=US`;
   const releaseData = useMovies(releaseUrl);
 
   return (

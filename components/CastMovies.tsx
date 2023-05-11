@@ -31,7 +31,7 @@ const CastMovies = ({ castMovieData }: CastMoviesProps) => {
               width={170}
               height={200}
               className="h-auto w-full"
-              loading="lazy"
+              priority
             />
             <p className="text-lg font-medium">{actor.name}</p>
             <p>{actor.character}</p>

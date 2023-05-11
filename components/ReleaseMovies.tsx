@@ -25,12 +25,12 @@ const ReleaseMovies = () => {
           <Link key={m.id} href={`/movie/${m.id}`} className="block">
             <div className="relative h-96">
               <Image
-                src={`${baseUrl}original${m.backdrop_path}`}
+                src={`${baseUrl}original${m?.backdrop_path}`}
                 alt={m.original_title}
                 height={0}
                 width={500}
                 className="h-full w-full object-contain"
-                priority
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-90"></div>
               <div className="absolute inset-0 flex justify-center items-end">
