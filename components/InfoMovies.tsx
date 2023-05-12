@@ -1,6 +1,6 @@
 "use client";
 import { MovieDetails } from "../interfaces";
-import { MdOutlineArrowBack } from "react-icons/all";
+import { MdOutlineArrowBack } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
