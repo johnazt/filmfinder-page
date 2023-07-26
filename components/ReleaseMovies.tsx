@@ -21,7 +21,7 @@ const ReleaseMovies = () => {
         showStatus={false}
         autoPlay
       >
-        {releaseData.map((m) => (
+        {releaseData?.map((m) => (
           <Link key={m.id} href={`/movie/${m.id}`} className="block">
             <div className="relative h-96">
               <Image

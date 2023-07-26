@@ -25,7 +25,7 @@ const InfoMovies = ({ detailMovieData }: InfoMovieProps) => {
         alt={detailMovieData.original_language}
         height={100}
         width={1500}
-        className="w-full object-cover object-top max-h-[666px]"
+        className="w-full object-cover object-top max-h-[400px]"
         priority
       />
       <div className="flex py-8 flex-col text-center lg:text-right gap-4 items-center md:flex-row lg:max-w-5xl m-auto">

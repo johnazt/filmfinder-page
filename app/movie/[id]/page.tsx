@@ -25,7 +25,7 @@ const DetailsMovie = ({ params }: { params: { id: string } }) => {
   const castMovieData = use(getCastMovie());
 
   return (
-    <main className="container mx-auto px-4">
+    <main className="container lg:container-md mx-auto px-4 lg:w-[1140px]">
       <InfoMovies detailMovieData={detailMovieData} />
       <CastMovies castMovieData={castMovieData} />
     </main>
