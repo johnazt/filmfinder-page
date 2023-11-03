@@ -1,6 +1,6 @@
 "use client";
-import React, { createContext, useContext } from "react";
-import { Movie } from "../interfaces";
+import React from "react";
+import { Movie } from "../interfaces/movie";
 import { useMovies } from "../hooks/useMovies";
 
 interface ContextProps {
@@ -8,7 +8,7 @@ interface ContextProps {
   releaseData: Movie[];
 }
 
-const GlobalContext = createContext<ContextProps>({
+const GlobalContext = React.createContext<ContextProps>({
   popularData: [],
   releaseData: [],
 });
@@ -33,4 +33,4 @@ export const GlobalContextProvider = ({
   );
 };
 
-export const useGlobalContext = () => useContext(GlobalContext);
+export const useGlobalContext = () => React.useContext(GlobalContext);

@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Movie } from "../interfaces";
+import React from "react";
+import { Movie } from "../interfaces/movie";
 
 export const useMovies = (url: string) => {
-  const [data, setData] = useState<Movie[]>([]);
+  const [data, setData] = React.useState<Movie[]>([]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(url);
       const data = await response.json();

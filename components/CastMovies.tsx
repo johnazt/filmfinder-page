@@ -1,7 +1,7 @@
 "use client";
-import { Actor } from "../interfaces";
+import React from "react";
+import { Actor } from "../interfaces/actor";
 import Image from "next/image";
-import React, { useState } from "react";
 
 interface CastMoviesProps {
   castMovieData: Actor[];
@@ -10,7 +10,7 @@ interface CastMoviesProps {
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const CastMovies = ({ castMovieData }: CastMoviesProps) => {
-  const [showAllActors, setShowAllActors] = useState(false);
+  const [showAllActors, setShowAllActors] = React.useState(false);
   const actorsToDisplay = showAllActors
     ? castMovieData
     : castMovieData.slice(0, 12);

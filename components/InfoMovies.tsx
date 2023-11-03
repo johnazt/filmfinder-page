@@ -1,9 +1,8 @@
 "use client";
-import { MovieDetails } from "../interfaces";
-import { MdOutlineArrowBack } from "react-icons/md";
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import { MovieDetails } from "../interfaces/movieDetails";
+import { MdOutlineArrowBack } from "react-icons/md";
 
 interface InfoMovieProps {
   detailMovieData: MovieDetails;

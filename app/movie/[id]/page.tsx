@@ -1,5 +1,6 @@
-import React, { use } from "react";
-import { CastMovies, InfoMovies } from "../../../components";
+import React from "react";
+import InfoMovies from "../../../components/InfoMovies";
+import CastMovies from "../../../components/CastMovies";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
@@ -21,8 +22,8 @@ const DetailsMovie = ({ params }: { params: { id: string } }) => {
       .then((res) => res.cast);
   }
 
-  const detailMovieData = use(getDetailsMovie());
-  const castMovieData = use(getCastMovie());
+  const detailMovieData = React.use(getDetailsMovie());
+  const castMovieData = React.use(getCastMovie());
 
   return (
     <main className="container lg:container-md mx-auto px-4 lg:w-[1140px]">

@@ -4,7 +4,6 @@ import { Carousel } from "react-responsive-carousel";
 import { useGlobalContext } from "../context/store";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 

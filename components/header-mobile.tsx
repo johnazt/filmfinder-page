@@ -1,7 +1,6 @@
 import Link from "next/link";
-import React from "react";
 
-const Navbar = () => {
+const HeaderMobile = () => {
   return (
     <nav className="flex justify-between items-baseline p-5 bg-zinc-950 text-xl h-16">
       <Link href="/">
@@ -14,7 +13,7 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HeaderMobile;
 
 export const HambugerIcon = () => {
   return (
