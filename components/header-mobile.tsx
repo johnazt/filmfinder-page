@@ -4,7 +4,7 @@ const HeaderMobile = () => {
   // md: hidden;
   return (
     <nav className="  bg-zinc-950 text-xl h-16 ">
-      <div className="lg:w-[1198px] mx-auto relative p-5 h-16 flex justify-between items-baseline">
+      <div className="lg:w-[80rem] mx-auto relative p-5 h-16 flex justify-between items-baseline">
         <Link href="/">
           <span className="text-2xl font-bold text-red-500">LastMovies</span>
         </Link>
