@@ -1,7 +1,6 @@
-import React from "react";
 import "../styles/globals.css";
-import Navbar from "../components/shared/Navbar";
 import { GlobalContextProvider } from "../context/store";
+import HeaderMobile from "../components/header-mobile";
 
 export const metadata = {
   title: "Last Movies",
@@ -25,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <HeaderMobile />
         <GlobalContextProvider>{children}</GlobalContextProvider>
       </body>
     </html>
