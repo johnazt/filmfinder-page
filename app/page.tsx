@@ -3,7 +3,7 @@ import ReleaseMovies from "../components/ReleaseMovies";
 
 const Home = () => {
   return (
-    <main className="container lg:container-md mx-auto px-4 lg:w-[1140px]">
+    <main className="container lg:container-md mx-auto px-4 lg:w-[1198px]">
       <ReleaseMovies />
       <PopularMovies />
     </main>
