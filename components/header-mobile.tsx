@@ -3,11 +3,13 @@ import Link from "next/link";
 const HeaderMobile = () => {
   // md: hidden;
   return (
-    <nav className="flex justify-between items-baseline p-5 bg-zinc-950 text-xl h-16 ">
-      <Link href="/">
-        <span className="text-2xl font-bold text-red-500">LastMovies</span>
-      </Link>
-      <HambugerIcon />
+    <nav className="  bg-zinc-950 text-xl h-16 ">
+      <div className="lg:w-[1198px] mx-auto relative p-5 h-16 flex justify-between items-baseline">
+        <Link href="/">
+          <span className="text-2xl font-bold text-red-500">LastMovies</span>
+        </Link>
+        <HambugerIcon />
+      </div>
     </nav>
   );
 };
