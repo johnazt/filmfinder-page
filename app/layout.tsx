@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { GlobalContextProvider } from "../context/store";
 import HeaderMobile from "../components/header-mobile";
+import Header from "../components/header";
 
 export const metadata = {
   title: "Last Movies",
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
         <HeaderMobile />
         <GlobalContextProvider>{children}</GlobalContextProvider>
       </body>
